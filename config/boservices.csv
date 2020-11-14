@@ -1,0 +1,16 @@
+Servername,TotalRunningServer,MinimumNumOfServer
+CentralManagementServer,1,0
+InputFileRepository,1,0
+DashboardsProcessingServer,1,0
+AdaptiveJobServer,1,0
+CrystalReportsCacheServer,1,0
+ConnectionServer,1,0
+WebApplicationContainerServer,1,0
+CrystalReportsProcessingServer,1,0
+WebIntelligenceProcessingServer,2,0
+CrystalReports2016ProcessingServer,1,0
+AdaptiveProcessingServer,1,0
+CrystalReports2016ReportApplicationServer,1,0
+EventServer,1,0
+DashboardsCacheServer,1,0
+OutputFileRepository,1,0
