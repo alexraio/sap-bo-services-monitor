@@ -128,10 +128,10 @@ if matchError:
 else:
     print("No Error: string found")
 
-print("XXX" + baseResorurce)
-print("ZZZ" + output)
-print("ZZZ" + str(stderr))
-print("ZZZ" + str(returncode))
+#print("XXX" + baseResorurce)
+#print("ZZZ" + output)
+#print("ZZZ" + str(stderr))
+#print("ZZZ" + str(returncode))
 
 with open(servicefile, 'r') as data_file:
     csv_data = csv.reader(data_file)
@@ -161,7 +161,7 @@ with open(servicefile, 'r') as data_file:
         for line in outputfile:
             if line.startswith("Server Name:"):
                 service = line.split(":", 1)[1]
-                print("XXX" + service)
+                #print("XXX" + service)
 
                 if servicename in service:
                     inService = True
