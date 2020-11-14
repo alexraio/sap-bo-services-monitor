@@ -26,7 +26,7 @@ boadmin user enviroment.
 CHECKDIR = "/pgm/os/bo/"
 CMS_PID = "/opt/bobj/sap_bobj/serverpids/*.CentralManagementServer.pid"
 BASICRESOURCE = "resources.services.sapbo"
-servicefile = "/home/boadmin/config/boservices.csv"
+servicefile = "boservices.csv"
 clustername = "BO_cluster_test"
 bo_admin = os.environ.get('BO_ADMIN')
 bo_passwd = os.environ.get('BO_PASSWD')
@@ -125,8 +125,8 @@ matchError = re.search("Error:", output, re.M)
 if matchError:
     print(matchError.group())
     quit()
-else:
-    print("No Error: string found")
+#else:
+#    print("No Error: string found")
 
 #print("XXX" + baseResorurce)
 #print("ZZZ" + output)
@@ -147,7 +147,7 @@ with open(servicefile, 'r') as data_file:
         servicename = line[0]
         servicetorun = line[1]
         servicealarm = line[2]
-        print(servicename, servicetorun, servicealarm)
+        print(f'ServiceName: {servicename}, TotalServiceToRun: {servicetorun}, MinimumServiceToRunAlarm: {servicealarm}')
 
         outputfile = output.split("\n")
         servicecounter = 0
